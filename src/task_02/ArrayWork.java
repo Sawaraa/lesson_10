@@ -1,17 +1,17 @@
 package task_02;
 
 import java.beans.Introspector;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 import task_01.Massif;
 
 public class ArrayWork {
-
-  Scanner scanner = new Scanner(System.in);
   Random random = new Random();
   int numRows = random.nextInt(5) + 1;
   int numCols = random.nextInt(5) + 1;
+
   Auto [][] autos;
 
   public void Massif(){

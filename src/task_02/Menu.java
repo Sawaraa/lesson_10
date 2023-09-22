@@ -1,10 +1,14 @@
 package task_02;
 
 import java.util.Arrays;
+import java.util.Scanner;
+import task_01.Massif;
 
 public class Menu extends ArrayWork{
 
+  Scanner scanner = new Scanner(System.in);
 
+  Main main = new Main(scanner);
   public void list(){
 
     System.out.println("Оберіть дію яку ви бажаєте:");
@@ -19,7 +23,7 @@ public class Menu extends ArrayWork{
 
       list();
 
-      switch (scanner.nextLine()){
+      switch (main.scanner.nextLine()){
 
         case "1":{
           Massif();
@@ -34,9 +38,9 @@ public class Menu extends ArrayWork{
           Massif();
           System.out.println("Введіть значення на яке ви бажаєте замінити всі дані масиву");
 
-          if(scanner.hasNextInt()){
-            int value = scanner.nextInt();
-            scanner.nextLine(); // Додали цей рядок
+          if(main.scanner.hasNextInt()){
+            int value = main.scanner.nextInt();
+            main.scanner.nextLine(); // Додали цей рядок
             for(int i = 0; i < autos.length; i++ ){
               for (int j = 0; j < autos[i].length; j++) {
                 Arrays.fill(autos[i], new Auto(value, value));
