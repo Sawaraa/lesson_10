@@ -3,3 +3,17 @@ G
 src/task_02/Engine.java,5\6\56d6767fb730fc909a4916b329bbc8ac00a4e983
 E
 src/task_02/Helm.java,b\7\b70a2834f939eaa78ae523ffb883414a851a96d0
+G
+src/task_01/Massif.java,a\e\aeb44e8ddfc404a14d98a3c29a71640d81456381
+E
+src/task_01/Main.java,d\a\daa55477abee099227e5d36e5df5f616011a3342
+E
+src/task_02/Auto.java,3\a\3a0e914eefdd2bd97c6214e5d7f4b59af879da11
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+J
+src/task_02/ArrayWork.java,c\f\cfa5be6e6d4a10035589d17c503b0d195c2b6a4e
+E
+src/task_02/Menu.java,0\d\0d2f73c4ed3a5685fcef237ab5be5703cf538282
+E
+src/task_02/Main.java,5\c\5cd905fee9e4194b8c01d0b8f3aa43ea629e8ad2

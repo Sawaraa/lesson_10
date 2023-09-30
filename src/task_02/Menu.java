@@ -28,8 +28,8 @@ public class Menu extends ArrayWork{
         case "1":{
           Massif();
 
-          for(Auto[] row: autos){
-            System.out.println(Arrays.deepToString(row));
+          for(Auto auto : autos){
+            System.out.println(auto);
           }
         }
         break;
@@ -41,14 +41,21 @@ public class Menu extends ArrayWork{
           if(main.scanner.hasNextInt()){
             int value = main.scanner.nextInt();
             main.scanner.nextLine(); // Додали цей рядок
-            for(int i = 0; i < autos.length; i++ ){
+
+            for (int i = 0; i < ramdomSize; i++){
+
+              Auto auto = new Auto(value, value);
+              autos.set(i,auto);
+            }
+
+            /*for(int i = 0; i < autos.length; i++ ){
               for (int j = 0; j < autos[i].length; j++) {
                 Arrays.fill(autos[i], new Auto(value, value));
               }
-            }
+            }*/
 
-            for(Auto[] row: autos){
-              System.out.println(Arrays.toString(row));
+            for(Auto auto: autos){
+              System.out.println(auto);
             }
           }else{System.out.println("Ви ввели не числове значення");}
 

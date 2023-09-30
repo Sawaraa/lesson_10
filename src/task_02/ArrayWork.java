@@ -10,26 +10,32 @@ import task_01.Massif;
 public class ArrayWork {
   Random random = new Random();
   int numRows = random.nextInt(5) + 1;
-  int numCols = random.nextInt(5) + 1;
+  int ramdomSize = random.nextInt(5) + 1;
 
-  Auto [][] autos;
+
+  ArrayList <Auto> autos;
+ // Auto [][] autos;
 
   public void Massif(){
 
-    autos = new Auto[numRows][numCols];
+    autos = new ArrayList<>(ramdomSize);
 
-    for(int i = 0; i < autos.length; i++){
+    for (int i = 0; i < ramdomSize; i++){
+      int randomForYear = random.nextInt(50)+1;
+      int randomForHorsepower = random.nextInt(100)+1;
 
+      Auto auto = new Auto(randomForHorsepower,randomForYear);
+      autos.add(auto);
+    }
+
+   /* for(int i = 0; i < autos.length; i++){
       for(int j = 0; j < autos[0].length; j++){
         int randomForYear = random.nextInt(50)+1;
         int randomForHorsepower = random.nextInt(100)+1;
         autos[i][j] = new Auto(randomForHorsepower, randomForYear);
       }
-    }
+    } */
 
-    /*for(Auto[] row: autos){
-      System.out.println(Arrays.toString(row));
-    }*/
   }
 
 

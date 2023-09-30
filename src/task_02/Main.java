@@ -17,8 +17,6 @@ public class Main {
     menu.menu();
     menu.scanner.close();
 
-
-
   }
 
 
