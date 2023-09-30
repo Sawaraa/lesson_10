@@ -1,28 +1,29 @@
 package task_01;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Random;
+import java.util.*;
 
 public class Massif {
 
   public void massif(){
 
     Random random = new Random();
-    Integer [] massif = new Integer[random.nextInt(15)];
+    int randomSize = random.nextInt(15);
+    ArrayList <Integer> arrayList = new ArrayList<>(randomSize);
 
-    for(int i = 0; i < massif.length ; i++){
-      massif[i] = random.nextInt(101);
+   // Integer [] massif = new Integer[random.nextInt(15)];
+
+    for(int i = 0; i < randomSize ; i++){
+      int randomValue = random.nextInt(100);
+      arrayList.add(randomValue);
     }
 
-    System.out.println( "Оригінальний масив: " + Arrays.toString(massif));
+    System.out.println( "Оригінальний масив: " + arrayList);
 
-    Arrays.sort(massif);
-    System.out.println("Від сортаваний за зростанням: " + Arrays.toString(massif));
+    Collections.sort(arrayList);
+    System.out.println("Від сортаваний за зростанням: " + arrayList);
 
-    Arrays.sort(massif, Collections.reverseOrder());
-    System.out.println("Від сортований за спаданням: " + Arrays.toString(massif));
+    Collections.sort(arrayList, Collections.reverseOrder());
+    System.out.println("Від сортований за спаданням: " + arrayList);
 
 
   }
